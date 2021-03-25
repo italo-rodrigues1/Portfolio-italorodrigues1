@@ -806,6 +806,7 @@ footer span a:hover{
     .menu-mobile ul li a:hover::after{
         width: 100%;
     }
+    
     .menu-mobile ul li a:hover{
         color: rgb(115, 255, 120);
        
