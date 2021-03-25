@@ -101,9 +101,7 @@ function menuMobile() {
 
 
 
-
-
-const consoleLogDif = `_____________________                                 
+const consoleLog = `_____________________                                 
                                                                                            
 # #####   ##   #       ####     #####   ####  #####  #####  #  ####  #    # ######  ####  
 #   #    #  #  #      #    #    #    # #    # #    # #    # # #    # #    # #      #      
@@ -115,7 +113,7 @@ const consoleLogDif = `_____________________
 
 `;
 
-console.log(consoleLogDif);
+console.log(str);
 
 
 // FUNÇÃO VOLTAR AO TOPO
