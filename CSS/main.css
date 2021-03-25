@@ -243,7 +243,7 @@ header .nav-menu ul li{
 }
 
 .img-main img:hover{
-    animation: rotate-img 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation: rotate-img 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 
 
@@ -251,7 +251,6 @@ header .nav-menu ul li{
     0% {
       -webkit-transform: rotateY(320deg);
         transform: rotateY(320deg);
-     
       opacity: 0.8;
     }
     100% {
@@ -791,8 +790,25 @@ footer span a:hover{
         text-decoration: none;
         color: #fff;
     }
+
+    .menu-mobile ul li a::after{
+        content: '';
+        width: 0%;
+        height: 2px;
+        background: #fff;
+        position: absolute;
+        left: 0;
+        top: 10px;
+        border-radius: 10px;
+        transition: .5s linear;
+    }
+
+    .menu-mobile ul li a:hover::after{
+        width: 100%;
+    }
     .menu-mobile ul li a:hover{
         color: rgb(115, 255, 120);
+       
     }
 
     .container-hero{
