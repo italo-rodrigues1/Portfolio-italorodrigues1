@@ -237,23 +237,31 @@ header .nav-menu ul li{
     width: 100%;
     max-width: 1080px;
     cursor: pointer;
-    transition: filter .4s linear;
+    transition:  .4s linear;
     height:100%;
     image-rendering: pixelated;
 }
 
-.img-main img::after{
-    content: "";
-    width:100%;
-    height:100%;
-  transform: translateX(50%);
-    background:#111;
+.img-main img:hover{
+    animation: rotate-img 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 
-.img-main img:hover::after{
-    background:rgba(255, 255, 255, 0);
-    width:0;
-}
+
+  @keyframes rotate-img{
+    0% {
+      -webkit-transform: rotateY(320deg);
+        transform: rotateY(320deg);
+     
+      opacity: 0.8;
+    }
+    100% {
+      -webkit-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+        opacity: 1;
+    }
+  }
+  
+  
 
 .title-hero{
     width: 100%;
