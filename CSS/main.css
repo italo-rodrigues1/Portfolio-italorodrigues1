@@ -231,19 +231,22 @@ header .nav-menu ul li{
     height: 100%;
     position: relative;
     margin-top: 51px;
+    perspective: 1000px;
 }
 
-.img-main img{
+.img-main .img-card{
     width: 100%;
     max-width: 1080px;
     cursor: pointer;
     transition:  .4s linear;
     height:100%;
     image-rendering: pixelated;
+    transform-style: preserve-3d;
 }
 
-.img-main img:hover{
-    animation: rotate-img 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+/*
+.img-main .img-card:hover{
+    animation:  2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 
 
@@ -260,7 +263,7 @@ header .nav-menu ul li{
     }
   }
   
-  
+*/  
 
 .title-hero{
     width: 100%;

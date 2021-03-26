@@ -113,7 +113,31 @@ const consoleLog = `_____________________
 
 `;
 
-console.log(str);
+console.log(consoleLog);
+
+
+
+
+
+
+// FUNÇÃO ANIMATION IMG
+
+const img = document.querySelector('.img-card');
+const containerImg = document.querySelector('.img-main');
+
+containerImg.addEventListener('mousemove',(e)=>{
+
+ 
+  let xAxis = (window.innerWidth / 2 - e.pageX)/20;
+  let yAxis = (window.innerHeight / 2 - e.pageY)/20;
+
+  img.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+   
+})
+
+containerImg.addEventListener('mouseleave',(e)=>{
+  img.style.transform = `rotateY(0deg) rotateX(0deg)`;
+})
 
 
 // FUNÇÃO VOLTAR AO TOPO
